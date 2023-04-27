@@ -9,11 +9,9 @@ while(i<=n):
     b=2*i
     i=i+1
     if (count+a+b>=n):
-        if(count+a<=n):
+        if(count+a>=n):
             print("patlu")
         else:
             print("Motu")
         break
     count=count+a+b
-
-    
