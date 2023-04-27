@@ -1,0 +1,19 @@
+# Function to sort an square array
+def sortSquare(arr, n):
+	for i in range(n):
+		arr[i]= arr[i] * arr[i]
+	arr.sort()
+
+# Driver code
+arr = [-6, -3, -1, 2, 4, 5]
+n = len(arr)
+
+print("Before sort")
+for i in range(n):
+	print(arr[i], end = " ")
+
+sortSquare(arr, n)
+
+print("\n After sort")
+for i in range(n):
+	print(arr[i], end = " ")
